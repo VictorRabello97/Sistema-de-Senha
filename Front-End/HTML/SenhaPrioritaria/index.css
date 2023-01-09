@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    max-height: 100vh;
+    height: 100vh;
+    background: center;
+
+    
+ }
+
+ html{
+    background-color: white;
+    color: white;
+}
+
+#container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+        overflow-y: scroll;
+
+    }
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 200;
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    color: rgb(26, 90, 185);
+    margin-bottom: 10%;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+::-webkit-scrollbar{
+    background-color: #F3F3F3;
+    width: 0.2rem;
+    border-radius: 0.7rem ;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background-color: rgb(12, 84, 116);
+    margin-top: 0;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+}
+
+
+#senhas {
+    flex-direction: column;
+    color: white;
+    width: 45%;
+}
+
+#buttonSenha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: white;
+    height: 6rem;
+    margin-top: 1rem;
+    font-family: 'Archivo', sans-serif;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    background: rgb(26, 90, 185);
+    cursor: pointer;
+
+}
+
+#buttonSenha:hover{
+    background: rgb(23, 21, 172);
+
+}
+
+
+
+a{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    width: 45%;
+    color: white;
+    height: 6rem;
+    font-family: 'Archivo', sans-serif;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    background: rgb(26, 90, 185);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    background: rgb(23, 21, 172);
+
+}
+
+@media (max-width: 1080px){
+
+    h1{
+        font-size: 2rem;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 200;
+
+    }
+    
+    #container{
+         width: 100%;
+        height: 100vh;
+        
+
+    }
+    
+    #buttonSenha{
+        padding: 2rem;
+    }
+
+    #senhas{
+        width: 70%;
+    }
+
+    a{
+        padding: 3rem;
+        width: 70%;
+    }
+
+}

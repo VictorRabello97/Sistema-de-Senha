@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    background-color: white;
+    color: white;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    max-height: 100vh;
+    height: 100vh;
+    background: center;
+    
+
+    
+ }
+ 
+ #container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    overflow-y: scroll;
+
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+
+img{
+    width: 30%;
+    align-items: center;
+    justify-content: center;   
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    margin-top: -1rem;
+    font-weight: 500;
+    color: rgb(26, 90, 185);
+    margin-bottom: 7rem;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+.normal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: white;
+    margin-top: 1rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    width: 50%;
+    height: 8rem;
+    font-family: 'Archivo', sans-serif;
+    background: rgb(26, 90, 185);
+    cursor: pointer;
+
+}
+
+.normal:hover{
+    background: rgb(23, 21, 172);
+
+}
+
+#fullscreen{
+    position: fixed;
+    width: 7rem;
+    right: 0;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+
+
+@media (max-width: 1080px){
+    
+    h1{
+        font-size: 2rem;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 200;
+
+    }
+    
+    
+    #container{
+
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .normal {
+        text-align: center;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 1.5rem;
+
+        }
+
+
+    a{
+        width: 100%;
+    }
+    
+    div{
+        width: 80%;
+    }
+
+    #fullscreen{
+        position: fixed;
+        right: 0;
+        width: 4rem;
+        margin-right: 0;
+        
+    }
+    
+
+
+    
+    
+}
